@@ -1,5 +1,6 @@
 REM Created by Jerome Ryan 20/01/2022 for Orbitel Technologies
 
+@echo off
 mkdir C:\Orbitel\Scripts\E8
 
 powershell -command "& { Invoke-Webrequest "https://raw.githubusercontent.com/OrbitelTechnologies/EssentialEight/main/UserApplicationHardening/UserApplicationHardening-Mat1.ps1" -OutFile C:\Orbitel\Scripts\E8\UserApplicationHardening-Mat1.ps1" }"

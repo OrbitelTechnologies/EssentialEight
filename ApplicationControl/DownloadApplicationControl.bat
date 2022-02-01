@@ -1,5 +1,6 @@
 REM Created by Jerome Ryan 20/01/2022 for Orbitel Technologies
 
+@echo off
 mkdir C:\Orbitel\Scripts\E8\WDAC
 
 powershell -command "& { Invoke-Webrequest "https://github.com/OrbitelTechnologies/EssentialEight/raw/main/ApplicationControl/WDAC/Policy.zip" -OutFile "C:\Orbitel\Scripts\E8\WDAC\Policy.zip"} " 
