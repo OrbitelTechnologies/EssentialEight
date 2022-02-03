@@ -18,9 +18,6 @@ $port = Read-Host -Prompt "Enter Port (Default is 8080)"
 $port = -join($port,":9392")
 
 Write-Host "Setting to Windows Engine mode. Please wait..."
-#Ensures Linux Daemon installed by switching between both.
-& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchWindowsEngine
-Start-Sleep -Seconds 60
 Write-Host "Setting to Linux Engine mode. Please wait..."
 & $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchLinuxEngine
 Start-Sleep -Seconds 60
