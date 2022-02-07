@@ -34,4 +34,6 @@ cmd -c "reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTR
 cmd -c "reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Microsoft\Office\16.0\word\Security" /v "8" /t REG_DWORD /d 1 /f"
 
 
-
+#Enable Powershell blocked script logging
+cmd -c "reg add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging" /v "EnableScriptBlockLogging" /t REG_DWORD /d 1 /f"
+$PSHOME\RegisterManifest.ps1
